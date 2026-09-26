@@ -13,5 +13,13 @@ namespace Snake
         public Food()
         { }
 
+
+
+        public void getEaten()
+        {
+                       Eaten = true;
+            //make it disappear
+            //add a point to the score - add score in drawing logic 
+        }
     }
 }
