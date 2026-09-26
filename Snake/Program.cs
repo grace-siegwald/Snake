@@ -9,7 +9,7 @@ namespace Snake
 
             Game game = new Game();
             // Initialize a window with a width, height, and title
-            Raylib.InitWindow(800, 480, "Hello Raylib C#");
+            Raylib.InitWindow(1000, 750, "Hello Raylib C#");
             Raylib.SetTargetFPS(60);
 
             // Main game loop
@@ -24,22 +24,8 @@ namespace Snake
                 // 2. Drawing logic
                 game.Draw();
 
-               
-
             }
 
-            //while (!Raylib.WindowShouldClose())
-            //{
-            //    // Keyboard input
-            //    if (Raylib.IsKeyPressed(KeyboardKey.Enter))
-            //    {
-            //        Console.WriteLine("Enter key pressed!");
-            //    }
-
-            //    // Close the window and clear resources
-            //    Raylib.CloseWindow();
-
-           
         }
     }
 }
@@ -49,10 +35,13 @@ namespace Snake
 /*
  TO DO:
 Una
--write getEaten fucntion
--make food be able to disappear
--make the grid 
-- make points show up and update in upper corner
--
+-make points show up and update in upper corner
+-Do we want a player class to store points in?
+-We might want a utility class as well to store drawing formats 
  
+
+
+NOTES: 
+right now if you press enter the square disappears and the eaten bool is true
+
  */

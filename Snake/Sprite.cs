@@ -10,8 +10,8 @@ namespace Snake
     public class Sprite 
     {
         public int SpawnLocationX;
-        public int Width =50; //these are working 
-        public int Height = 50;
+        public int Width =49; //these are working - 49 so it fits in the 50x50 squares of the grid
+        public int Height = 49;
         public int SpawnLocationY; //sprite position is being controlled here
         public int SpawnLocationY1;//this only occurs once at the start of the game
         public int Direction;

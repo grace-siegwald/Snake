@@ -6,37 +6,30 @@ using System.Threading.Tasks;
 using Raylib_cs;
 namespace Snake
 {
-    internal class Food : Sprite
+    public class Food : Sprite
     {
         public int Value; //this is the players points
-        public bool Eaten; //this does not have to stay as a bool
+
+
+        public bool Eaten = false;
         public Food()
         { }
 
-        public void eat() //this is temp and should be in snake 
+        public void getEaten() //this is temp and should be in snake 
         {
 
-           
-
-            if (Raylib.IsKeyDown(KeyboardKey.D))
+            if (Raylib.IsKeyPressed(KeyboardKey.Enter)) //replace the condition with the collision between snake and food 
             {
-
-                Raylib.EndDrawing();
+                Eaten = true;
+                //add a point to the score - add score in drawing logic 
 
             }
 
 
-
         }
 
 
 
-        public void getEaten()
-        {
-                       Eaten = true;
-            //make it disappear
-            //add a point to the score - add score in drawing logic 
-        }
 
 
 
