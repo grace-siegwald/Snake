@@ -11,10 +11,19 @@ namespace Snake
     {
         Food food = new Food();
 
+        //use flags to change drawing states
+        bool Eaten = false;
         public void updateLogic()
         {
             //check sprite spawn
             food.Spawn(100, 100);
+            food.eat();
+
+            if (Raylib.IsKeyPressed(KeyboardKey.Enter)) //replace the condition with the collision between snake and food 
+            {
+                Eaten = true; 
+            }
+
         }
 
 
@@ -24,70 +33,17 @@ namespace Snake
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.RayWhite);
 
-            Raylib.DrawRectangle(food.SpawnLocationX, food.SpawnLocationY, food.Width, food.Height, Color.Blue); //can you change these paramters to be the ones in sprite 
+
+            if (Eaten == false)
+            {
+                Raylib.DrawRectangle(food.SpawnLocationX, food.SpawnLocationY, food.Width, food.Height, Color.Blue); //can you change these paramters to be the ones in sprite 
+            }
+
 
 
             Raylib.EndDrawing();
 
         }
-
-
-
-        /* public void Draw()
-        {
-            // Initialize a window with a width, height, and title
-            Raylib.InitWindow(800, 480, "Hello Raylib C#");
-            Raylib.SetTargetFPS(60);
-
-            // Main game loop
-            while (!Raylib.WindowShouldClose())
-            {
-                // 1. Update logic goes here (e.g., checking input)
-
-                // 2. Drawing logic
-                Raylib.BeginDrawing();
-                Raylib.ClearBackground(Color.RayWhite);
-
-                Raylib.DrawRectangle(sprite.SpawnLocationX, sprite.SpawnLocationY, sprite.Width, sprite.Height, Color.Blue); //can you change these paramters to be the ones in sprite 
-
-
-                Raylib.EndDrawing();
-            }
-
-            // Close the window and clear resources
-            Raylib.CloseWindow();
-
-        }
-*/
-
-
-
-        public void DrawDefault()//backup method 
-        {
-            // Initialize a window with a width, height, and title
-            Raylib.InitWindow(800, 480, "Hello Raylib C#");
-            Raylib.SetTargetFPS(60);
-
-            // Main game loop
-            while (!Raylib.WindowShouldClose())
-            {
-                // 1. Update logic goes here (e.g., checking input)
-
-                // 2. Drawing logic
-                Raylib.BeginDrawing();
-                Raylib.ClearBackground(Color.RayWhite);
-
-                Raylib.DrawText("Congrats! You created your first Raylib C# window!", 100, 200, 20, Color.LightGray);
-
-                Raylib.EndDrawing();
-            }
-
-            // Close the window and clear resources
-            Raylib.CloseWindow();
-
-        }
-
-
 
 
 

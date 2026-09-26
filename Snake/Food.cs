@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Raylib_cs;
 namespace Snake
 {
     internal class Food : Sprite
@@ -13,6 +13,22 @@ namespace Snake
         public Food()
         { }
 
+        public void eat() //this is temp and should be in snake 
+        {
+
+           
+
+            if (Raylib.IsKeyDown(KeyboardKey.D))
+            {
+
+                Raylib.EndDrawing();
+
+            }
+
+
+
+        }
+
 
 
         public void getEaten()
@@ -21,5 +37,8 @@ namespace Snake
             //make it disappear
             //add a point to the score - add score in drawing logic 
         }
+
+
+
     }
 }

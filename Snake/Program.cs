@@ -15,23 +15,30 @@ namespace Snake
             // Main game loop
             while (!Raylib.WindowShouldClose())
             {
+               
+
                 // 1. Update logic goes here (e.g., checking input)
+                //input?
                 game.updateLogic();
 
                 // 2. Drawing logic
                 game.Draw();
 
-
+               
 
             }
 
-            // Close the window and clear resources
-            Raylib.CloseWindow();
+            //while (!Raylib.WindowShouldClose())
+            //{
+            //    // Keyboard input
+            //    if (Raylib.IsKeyPressed(KeyboardKey.Enter))
+            //    {
+            //        Console.WriteLine("Enter key pressed!");
+            //    }
 
+            //    // Close the window and clear resources
+            //    Raylib.CloseWindow();
 
-
-
-            
            
         }
     }
