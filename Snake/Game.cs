@@ -11,12 +11,8 @@ namespace Snake
     {
         // The size of the game window
         public int WindowWidth = 1000;
-        public int WindowHeight = 750;
+        public int WindowHeight = 1000;
         // The number of lines in the grid
-        int numHorLines = 21;
-        int numVertLines = 21;
-        // The size of each square on the grid
-        public int squareSize = 50;
 
         World World;
         Snake Snake;
@@ -55,8 +51,8 @@ namespace Snake
         // TODO: Implement a debug class for ease of use?
         private void DebugDraw()
         {
-            Raylib.DrawText($"Num Vertical Lines: {numVertLines}", 55, 50, 20, Color.Red);
-            Raylib.DrawText($"Num Horizontal Lines: {numHorLines}", 55, 75, 20, Color.Red);
+            Raylib.DrawText($"Num Vertical Lines: {World.numVertLines}", 55, 50, 20, Color.Red);
+            Raylib.DrawText($"Num Horizontal Lines: {World.numHorLines}", 55, 75, 20, Color.Red);
         }
     }
 }

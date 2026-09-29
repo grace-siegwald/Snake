@@ -10,8 +10,8 @@ namespace Snake
     {
         int WindowHeight;
         int WindowWidth;
-        int numHorLines = 21;
-        int numVertLines = 21;
+        public int numHorLines = 21;
+        public int numVertLines = 21;
         public int squareSize = 50;
         public World(Game game)
         {
