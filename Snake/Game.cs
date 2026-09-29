@@ -9,10 +9,13 @@ namespace Snake
 {
     public class Game
     {
+        // The size of the game window
         public int WindowWidth = 1000;
         public int WindowHeight = 1000;
         // Array of x-y start and end positions for drawing the grid
         int[,] gridValues = new int[2, 4];
+        int numHorLines = 21;
+        int numVertLines = 21;
         // The size of each square on the grid
         int squareSize = 50;
         
@@ -21,6 +24,7 @@ namespace Snake
         public Game()
         {
             // Defining the "static" values for the grid (Vertical endPosY, Horizontal endPosX)
+            // These values will always be the same as the Window width and height
             gridValues[0, 3] = WindowHeight;
             gridValues[1, 2] = WindowWidth;
 
@@ -34,7 +38,7 @@ namespace Snake
 
         }
         
-        private void DrawGrid(int numVertLines, int numHorLines)
+        private void DrawGrid()
         {
             if (numHorLines == numVertLines)
             {
@@ -67,7 +71,8 @@ namespace Snake
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.RayWhite);
 
-            DrawGrid(21, 21);
+            DrawGrid();
+            DebugDraw();
 
             //vertical lines - this would be good for a utility class 
             Raylib.DrawLine(0, 0, 0, 750, Color.Black);
@@ -123,6 +128,13 @@ namespace Snake
             }
 
             Raylib.EndDrawing();
+        }
+
+        // TODO: Implement a debug class for ease of use?
+        private void DebugDraw()
+        {
+            Raylib.DrawText($"Num Vertical Lines: {numVertLines}", 55, 50, 20, Color.Red);
+            Raylib.DrawText($"Num Horizontal Lines: {numHorLines}", 55, 75, 20, Color.Red);
         }
     }
 }
