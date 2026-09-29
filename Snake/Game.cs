@@ -9,18 +9,24 @@ namespace Snake
 {
     public class Game
     {
-        Food food = new Food();
+        public int WindowWidth = 1000;
+        public int WindowHeight = 1000;
         // Array of x-y start and end positions for drawing the grid
         int[,] gridValues = new int[2, 4];
-
+        // The size of each square on the grid
+        int squareSize = 50;
+        
+        Food food = new Food();
+        
         public Game()
         {
             // Defining the "static" values for the grid (Vertical endPosY, Horizontal endPosX)
-            gridValues[1, 4] = 750;
-            gridValues[2, 3] = 1000;
+            gridValues[0, 3] = WindowHeight;
+            gridValues[1, 2] = WindowWidth;
+
         }
         
-        public void updateLogic()
+        public void Update()
         {
             //check sprite spawn
             food.Spawn(100, 100);
@@ -30,10 +36,28 @@ namespace Snake
         
         private void DrawGrid(int numVertLines, int numHorLines)
         {
-            
-            for (int i = 0; i <= numVertLines; i++)
+            if (numHorLines == numVertLines)
             {
+                for (int i = 0; i <= numVertLines; i++)
+                {
+                    // Line Drawing logic goes here:
 
+
+                    // This nested for loop is adding an amount (in this case 50) to each element in the gridValues array
+                    // This 
+                    for (int r = 0; r < gridValues.GetLength(0); r++)
+                    {
+                        for (int c = 0; c < gridValues.GetLength(1); c++)
+                        {
+                            gridValues[r, c] += squareSize;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // TODO: Implement logic for drawing different number of vertical and horizontal lines
+                throw new Exception("uh what do we do here...");
             }
         }
 
@@ -43,7 +67,7 @@ namespace Snake
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.RayWhite);
 
-            //DrawGrid(21, 21);
+            DrawGrid(21, 21);
 
             //vertical lines - this would be good for a utility class 
             Raylib.DrawLine(0, 0, 0, 750, Color.Black);

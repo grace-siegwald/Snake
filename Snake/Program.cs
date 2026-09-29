@@ -9,17 +9,14 @@ namespace Snake
 
             Game game = new Game();
             // Initialize a window with a width, height, and title
-            Raylib.InitWindow(1000, 750, "Hello Raylib C#");
+            Raylib.InitWindow(game.WindowWidth, game.WindowHeight, "Snake!");
             Raylib.SetTargetFPS(60);
 
             // Main game loop
             while (!Raylib.WindowShouldClose())
             {
-               
-
-                // 1. Update logic goes here (e.g., checking input)
-                //input?
-                game.updateLogic();
+                // 1. Update logic
+                game.Update();
 
                 // 2. Drawing logic
                 game.Draw();
