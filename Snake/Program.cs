@@ -6,7 +6,6 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-
             Game game = new Game();
             // Initialize a window with a width, height, and title
             Raylib.InitWindow(game.WindowWidth, game.WindowHeight, "Snake!");
@@ -20,9 +19,7 @@ namespace Snake
 
                 // 2. Drawing logic
                 game.Draw();
-
             }
-
         }
     }
 }

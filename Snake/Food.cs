@@ -11,7 +11,7 @@ namespace Snake
         public int Value; //this is the players points
 
         public bool Eaten = false;
-        public Food(Game game) : base(game) // the child constructor must pass the required 
+        public Food(Game game) : base(game) // Pass the required Game instance to the base Sprite constructor
         { 
         
         }

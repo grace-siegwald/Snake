@@ -18,37 +18,21 @@ namespace Snake
         // The size of each square on the grid
         public int squareSize = 50;
 
-        Food food;
+        World World;
+        Food Food;
 
         public Game()
         {
-            // Instance of food object, passing in instance of this game so that food can access its fields
-            food = new Food(this);
-            numHorLines = WindowHeight / squareSize;
-            numVertLines = WindowWidth / squareSize;
+            // Instances of all the game's objects, passing in instance of this game so they can access the game's fields
+            World = new World(this);
+            Food = new Food(this);
         }
 
         public void Update()
         {
             //check sprite spawn
-            food.Spawn(100, 100);
-            food.getEaten();
-        }
-
-        private void DrawGrid()
-        {
-            // Draw Vertical Lines
-            for (int i = 0; i < numVertLines; i++)
-            {
-                int x = i * squareSize;
-                Raylib.DrawLine(x, 0, x, WindowHeight, Color.Black);
-            }
-            // Draw Horizontal Lines
-            for (int i = 0; i < numHorLines; i++)
-            {
-                int y = i * squareSize;
-                Raylib.DrawLine(0, y, WindowWidth, y, Color.Black);
-            }
+            Food.Spawn(100, 100);
+            Food.getEaten();
         }
 
         public void Draw()
@@ -58,11 +42,11 @@ namespace Snake
             Raylib.ClearBackground(Color.RayWhite);
 
             DebugDraw();
-            DrawGrid();
+            World.DrawGrid();
 
-            if (!food.Eaten) //eaten is a bool in food 
+            if (!Food.Eaten) //eaten is a bool in food 
             {
-                Raylib.DrawRectangle(food.SpawnLocationX, food.SpawnLocationY, food.Width, food.Height, Color.Blue); //can you change these parameters to be the ones in sprite 
+                Raylib.DrawRectangle(Food.SpawnLocationX, Food.SpawnLocationY, Food.Width, Food.Height, Color.Blue); //can you change these parameters to be the ones in sprite 
             }
 
             Raylib.EndDrawing();
