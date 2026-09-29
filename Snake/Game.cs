@@ -14,9 +14,9 @@ namespace Snake
         public int WindowHeight = 1000;
         // The number of lines in the grid
 
-        World World;
-        Snake Snake;
-        Food Food;
+        public World World;
+        public Snake Snake;
+        public Food Food;
 
         public Game()
         {

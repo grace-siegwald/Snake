@@ -21,8 +21,8 @@ namespace Snake
         public int Length; //this will change sometimes
         public Sprite(Game game) // pass in an instance of the Game
         {
-            Width = game.squareSize;
-            Height = game.squareSize;
+            Width = game.World.squareSize;
+            Height = game.World.squareSize;
         }
 
         public virtual void Spawn(int SpawnX, int SpawnY)
