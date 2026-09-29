@@ -11,57 +11,41 @@ namespace Snake
     {
         // The size of the game window
         public int WindowWidth = 1000;
-        public int WindowHeight = 1000;
-        // Array of x-y start and end positions for drawing the grid
-        int[,] gridValues = new int[2, 4];
+        public int WindowHeight = 750;
+        // The number of lines in the grid
         int numHorLines = 21;
         int numVertLines = 21;
         // The size of each square on the grid
-        int squareSize = 50;
-        
+        int squareSize = 25;
+
         Food food = new Food();
-        
+
         public Game()
         {
-            // Defining the "static" values for the grid (Vertical endPosY, Horizontal endPosX)
-            // These values will always be the same as the Window width and height
-            gridValues[0, 3] = WindowHeight;
-            gridValues[1, 2] = WindowWidth;
-
+            numHorLines = WindowHeight / squareSize;
+            numVertLines = WindowWidth / squareSize;
         }
-        
+
         public void Update()
         {
             //check sprite spawn
             food.Spawn(100, 100);
             food.getEaten();
-
         }
-        
+
         private void DrawGrid()
         {
-            if (numHorLines == numVertLines)
+            // Draw Vertical Lines
+            for (int i = 0; i < numVertLines; i++)
             {
-                for (int i = 0; i <= numVertLines; i++)
-                {
-                    // Line Drawing logic goes here:
-
-
-                    // This nested for loop is adding an amount (in this case 50) to each element in the gridValues array
-                    // This 
-                    for (int r = 0; r < gridValues.GetLength(0); r++)
-                    {
-                        for (int c = 0; c < gridValues.GetLength(1); c++)
-                        {
-                            gridValues[r, c] += squareSize;
-                        }
-                    }
-                }
+                int x = i * squareSize;
+                Raylib.DrawLine(x, 0, x, WindowHeight, Color.Black);
             }
-            else
+            // Draw Horizontal Lines
+            for (int i = 0; i < numHorLines; i++)
             {
-                // TODO: Implement logic for drawing different number of vertical and horizontal lines
-                throw new Exception("uh what do we do here...");
+                int y = i * squareSize;
+                Raylib.DrawLine(0, y, WindowWidth, y, Color.Black);
             }
         }
 
@@ -71,56 +55,10 @@ namespace Snake
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.RayWhite);
 
-            DrawGrid();
             DebugDraw();
+            DrawGrid();
 
-            //vertical lines - this would be good for a utility class 
-            Raylib.DrawLine(0, 0, 0, 750, Color.Black);
-            Raylib.DrawLine(50, 0, 50, 750, Color.Black);
-            Raylib.DrawLine(100, 0, 100, 750, Color.Black);
-            Raylib.DrawLine(150, 0, 150, 750, Color.Black);
-            Raylib.DrawLine(200, 0, 200, 750, Color.Black);
-            Raylib.DrawLine(250, 0, 250, 750, Color.Black);
-            Raylib.DrawLine(300, 0, 300, 750, Color.Black);
-            Raylib.DrawLine(350, 0, 350, 750, Color.Black);
-            Raylib.DrawLine(400, 0, 400, 750, Color.Black);
-            Raylib.DrawLine(450, 0, 450, 750, Color.Black);
-            Raylib.DrawLine(500, 0, 500, 750, Color.Black);
-            Raylib.DrawLine(550, 0, 550, 750, Color.Black);
-            Raylib.DrawLine(600, 0, 600, 750, Color.Black);
-            Raylib.DrawLine(650, 0, 650, 750, Color.Black);
-            Raylib.DrawLine(700, 0, 700, 750, Color.Black);
-            Raylib.DrawLine(750, 0, 750, 750, Color.Black);
-            Raylib.DrawLine(800, 0, 800, 750, Color.Black);
-            Raylib.DrawLine(850, 0, 850, 750, Color.Black);
-            Raylib.DrawLine(900, 0, 900, 750, Color.Black);
-            Raylib.DrawLine(950, 0, 950, 750, Color.Black);
-            Raylib.DrawLine(1000, 0, 1000, 750, Color.Black);
-
-
-
-            //horizontal lines
-            Raylib.DrawLine(0, 0, 1000, 0, Color.Black);
-            Raylib.DrawLine(0, 50, 1000, 50, Color.Black);
-            Raylib.DrawLine(0, 100, 1000, 100, Color.Black);
-            Raylib.DrawLine(0, 150, 1000, 150, Color.Black);
-            Raylib.DrawLine(0, 200, 1000, 200, Color.Black);
-            Raylib.DrawLine(0, 250, 1000, 250, Color.Black);
-            Raylib.DrawLine(0, 300, 1000, 300, Color.Black);
-            Raylib.DrawLine(0, 350, 1000, 350, Color.Black);
-            Raylib.DrawLine(0, 400, 1000, 400, Color.Black);
-            Raylib.DrawLine(0, 450, 1000, 450, Color.Black);
-            Raylib.DrawLine(0, 500, 1000, 500, Color.Black);
-            Raylib.DrawLine(0, 550, 1000, 550, Color.Black);
-            Raylib.DrawLine(0, 600, 1000, 600, Color.Black);
-            Raylib.DrawLine(0, 650, 1000, 650, Color.Black);
-            Raylib.DrawLine(0, 700, 1000, 700, Color.Black);
-            Raylib.DrawLine(0, 750, 1000, 750, Color.Black);
-            Raylib.DrawLine(0, 800, 1000, 800, Color.Black);
-            Raylib.DrawLine(0, 850, 1000, 850, Color.Black);
-            Raylib.DrawLine(0, 900, 1000, 900, Color.Black);
-            Raylib.DrawLine(0, 950, 1000, 950, Color.Black);
-            Raylib.DrawLine(0, 1000, 1000, 1000, Color.Black);
+            //Raylib.DrawLine(50, 0, 50, 750, Color.Black);
 
             if (food.Eaten == false) //eaten is a bool in food 
             {
