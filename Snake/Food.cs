@@ -24,14 +24,6 @@ namespace Snake
                 //add a point to the score - add score in drawing logic 
 
             }
-
-
         }
-
-
-
-
-
-
     }
 }

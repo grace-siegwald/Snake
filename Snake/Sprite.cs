@@ -30,9 +30,5 @@ namespace Snake
             //spawn just means draw on the screen at x location
 
         }
-
-       
-
-
     }
 }

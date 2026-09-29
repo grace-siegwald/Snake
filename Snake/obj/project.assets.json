@@ -78,23 +78,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\": {},
+    "C:\\Users\\kbsie\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mac\\Home\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
+      "projectUniqueName": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
       "projectName": "Snake",
-      "projectPath": "C:\\Mac\\Home\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
-      "packagesPath": "C:\\Users\\grace.siegwald\\.nuget\\packages\\",
-      "outputPath": "C:\\Mac\\Home\\Documents\\GitHub\\Snake\\Snake\\obj\\",
+      "projectPath": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
+      "packagesPath": "C:\\Users\\kbsie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\grace.siegwald\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kbsie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -103,7 +103,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

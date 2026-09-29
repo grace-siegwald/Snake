@@ -10,7 +10,15 @@ namespace Snake
     public class Game
     {
         Food food = new Food();
+        // Array of x-y start and end positions for drawing the grid
+        int[,] gridValues = new int[2, 4];
 
+        public Game()
+        {
+            // Defining the "static" values for the grid (Vertical endPosY, Horizontal endPosX)
+            gridValues[1, 4] = 750;
+            gridValues[2, 3] = 1000;
+        }
         
         public void updateLogic()
         {
@@ -19,13 +27,23 @@ namespace Snake
             food.getEaten();
 
         }
+        
+        private void DrawGrid(int numVertLines, int numHorLines)
+        {
+            
+            for (int i = 0; i <= numVertLines; i++)
+            {
 
+            }
+        }
 
         public void Draw()
         {
 
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.RayWhite);
+
+            //DrawGrid(21, 21);
 
             //vertical lines - this would be good for a utility class 
             Raylib.DrawLine(0, 0, 0, 750, Color.Black);
@@ -75,19 +93,12 @@ namespace Snake
             Raylib.DrawLine(0, 950, 1000, 950, Color.Black);
             Raylib.DrawLine(0, 1000, 1000, 1000, Color.Black);
 
-
             if (food.Eaten == false) //eaten is a bool in food 
             {
                 Raylib.DrawRectangle(food.SpawnLocationX, food.SpawnLocationY, food.Width, food.Height, Color.Blue); //can you change these paramters to be the ones in sprite 
             }
 
-
-
             Raylib.EndDrawing();
-
         }
-
-
-
     }
 }

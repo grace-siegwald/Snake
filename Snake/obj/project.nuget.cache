@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "z5peoXii29Y=",
+  "dgSpecHash": "g+mIVmu0kYk=",
   "success": true,
-  "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
+  "projectFilePath": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\grace.siegwald\\.nuget\\packages\\raylib-cs\\8.1.0\\raylib-cs.8.1.0.nupkg.sha512"
+    "C:\\Users\\kbsie\\.nuget\\packages\\raylib-cs\\8.1.0\\raylib-cs.8.1.0.nupkg.sha512"
   ],
   "logs": []
 }
