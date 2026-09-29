@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,42 +34,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "World.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
-              "RelativeDocumentMoniker": "World.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
-              "RelativeToolTip": "World.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T04:12:09.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:11:17.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClassDiagram.cd",
               "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\ClassDiagram.cd",
               "RelativeDocumentMoniker": "ClassDiagram.cd",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\ClassDiagram.cd*",
-              "RelativeToolTip": "ClassDiagram.cd*",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\ClassDiagram.cd",
+              "RelativeToolTip": "ClassDiagram.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
               "WhenOpened": "2026-09-29T03:51:23.198Z",
               "EditorCaption": ""
@@ -81,74 +51,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
+              "RelativeDocumentMoniker": "World.cs",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
+              "RelativeToolTip": "World.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T04:12:09.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwDYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T20:22:22.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Sprite.cs",
               "RelativeDocumentMoniker": "Sprite.cs",
               "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Sprite.cs",
               "RelativeToolTip": "Sprite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T20:17:03.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Food.cs",
               "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Food.cs",
               "RelativeDocumentMoniker": "Food.cs",
               "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Food.cs",
               "RelativeToolTip": "Food.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T20:16:19.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Snake.cs",
               "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.cs",
               "RelativeDocumentMoniker": "Snake.cs",
               "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.cs",
               "RelativeToolTip": "Snake.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-29T03:52:21.104Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ac4a886f-d3fc-4a18-9fd4-aad4e90bcd18",
-        "Display": 0,
-        "X": 1856,
-        "Y": 118,
-        "Width": 1421,
-        "Height": 1170,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:22:22.112Z",
               "EditorCaption": ""
             }
           ]

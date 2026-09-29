@@ -26,5 +26,10 @@ namespace Snake
             // TODO: add growing logic here
             // If this snake has just ate food, grow by one square size 
         }
+        public override void Draw()
+        {
+            // TODO: figure out if draw logic for snake needs its own special functionality, implement it here
+            base.Draw();
+        }
     }
 }

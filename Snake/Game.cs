@@ -19,12 +19,14 @@ namespace Snake
         public int squareSize = 50;
 
         World World;
+        Snake Snake;
         Food Food;
 
         public Game()
         {
             // Instances of all the game's objects, passing in instance of this game so they can access the game's fields
             World = new World(this);
+            Snake = new Snake(this);
             Food = new Food(this);
         }
 
@@ -32,6 +34,7 @@ namespace Snake
         {
             //check sprite spawn
             Food.Spawn(100, 100);
+            Snake.Spawn(500, 500);
             Food.getEaten();
         }
 
@@ -41,13 +44,10 @@ namespace Snake
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.RayWhite);
 
-            DebugDraw();
             World.DrawGrid();
-
-            if (!Food.Eaten) //eaten is a bool in food 
-            {
-                Raylib.DrawRectangle(Food.SpawnLocationX, Food.SpawnLocationY, Food.Width, Food.Height, Color.Blue); //can you change these parameters to be the ones in sprite 
-            }
+            Snake.Draw();
+            Food.Draw();
+            DebugDraw();
 
             Raylib.EndDrawing();
         }

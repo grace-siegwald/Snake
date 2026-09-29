@@ -7,28 +7,24 @@
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\kbsie\\documents\\github\\snake\\snake\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,41 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "World.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
-              "RelativeDocumentMoniker": "World.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
-              "RelativeToolTip": "World.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T04:12:09.444Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:11:17.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ClassDiagram.cd",
               "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\ClassDiagram.cd",
               "RelativeDocumentMoniker": "ClassDiagram.cd",
@@ -85,40 +51,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Sprite.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Sprite.cs",
-              "RelativeDocumentMoniker": "Sprite.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Sprite.cs",
-              "RelativeToolTip": "Sprite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Title": "World.cs",
+              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
+              "RelativeDocumentMoniker": "World.cs",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\World.cs",
+              "RelativeToolTip": "World.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:17:03.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Food.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Food.cs",
-              "RelativeDocumentMoniker": "Food.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Food.cs",
-              "RelativeToolTip": "Food.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:16:19.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Snake.cs",
-              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.cs",
-              "RelativeDocumentMoniker": "Snake.cs",
-              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.cs",
-              "RelativeToolTip": "Snake.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T03:52:21.104Z",
+              "WhenOpened": "2026-09-29T04:12:09.444Z",
               "EditorCaption": ""
             },
             {
@@ -129,9 +69,48 @@
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T20:22:22.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sprite.cs",
+              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Sprite.cs",
+              "RelativeDocumentMoniker": "Sprite.cs",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Sprite.cs",
+              "RelativeToolTip": "Sprite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T20:17:03.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Food.cs",
+              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Food.cs",
+              "RelativeDocumentMoniker": "Food.cs",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Food.cs",
+              "RelativeToolTip": "Food.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T20:16:19.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Snake.cs",
+              "DocumentMoniker": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.cs",
+              "RelativeDocumentMoniker": "Snake.cs",
+              "ToolTip": "C:\\Users\\kbsie\\Documents\\GitHub\\Snake\\Snake\\Snake.cs",
+              "RelativeToolTip": "Snake.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T03:52:21.104Z",
               "EditorCaption": ""
             }
           ]

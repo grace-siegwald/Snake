@@ -25,13 +25,17 @@ namespace Snake
             Height = game.squareSize;
         }
 
-        public void Spawn(int SpawnX, int SpawnY)
+        public virtual void Spawn(int SpawnX, int SpawnY)
         {
+            // TODO: Normalize the spawn locations so it's just the "grid" coordinate of the world (ie 1,1 is top left square)
             SpawnLocationX = SpawnX;
             SpawnLocationY = SpawnY;
 
             //spawn just means draw on the screen at x location
-
+        }
+        public virtual void Draw()
+        {
+            Raylib.DrawRectangle(SpawnLocationX, SpawnLocationY, Width, Height, Color.SkyBlue);
         }
     }
 }
