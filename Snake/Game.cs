@@ -10,8 +10,8 @@ namespace Snake
     public class Game
     {
         // The size of the game window
-        public int WindowWidth = 800;
-        public int WindowHeight = 800;
+        public int WindowWidth = 900;
+        public int WindowHeight = 900;
         // The number of lines in the grid
 
         public World World;
