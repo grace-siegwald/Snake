@@ -78,19 +78,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Roberts002\\.nuget\\packages\\": {}
+    "C:\\Users\\Siegwald\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roberts002\\Documents\\Snake\\Snake\\Snake.csproj",
+      "projectUniqueName": "C:\\Users\\Siegwald\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
       "projectName": "Snake",
-      "projectPath": "C:\\Users\\Roberts002\\Documents\\Snake\\Snake\\Snake.csproj",
-      "packagesPath": "C:\\Users\\Roberts002\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roberts002\\Documents\\Snake\\Snake\\obj\\",
+      "projectPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
+      "packagesPath": "C:\\Users\\Siegwald\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Siegwald\\Documents\\GitHub\\Snake\\Snake\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Roberts002\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Siegwald\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
