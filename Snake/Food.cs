@@ -10,10 +10,11 @@ namespace Snake
     {
         public int Value; //this is the players points
 
-
         public bool Eaten = false;
-        public Food()
-        { }
+        public Food(Game game) : base(game) // the child constructor must pass the required 
+        { 
+        
+        }
 
         public void getEaten() //this is temp and should be in snake 
         {

@@ -16,12 +16,14 @@ namespace Snake
         int numHorLines = 21;
         int numVertLines = 21;
         // The size of each square on the grid
-        int squareSize = 25;
+        public int squareSize = 50;
 
-        Food food = new Food();
+        Food food;
 
         public Game()
         {
+            // Instance of food object, passing in instance of this game so that food can access its fields
+            food = new Food(this);
             numHorLines = WindowHeight / squareSize;
             numVertLines = WindowWidth / squareSize;
         }
@@ -58,11 +60,9 @@ namespace Snake
             DebugDraw();
             DrawGrid();
 
-            //Raylib.DrawLine(50, 0, 50, 750, Color.Black);
-
-            if (food.Eaten == false) //eaten is a bool in food 
+            if (!food.Eaten) //eaten is a bool in food 
             {
-                Raylib.DrawRectangle(food.SpawnLocationX, food.SpawnLocationY, food.Width, food.Height, Color.Blue); //can you change these paramters to be the ones in sprite 
+                Raylib.DrawRectangle(food.SpawnLocationX, food.SpawnLocationY, food.Width, food.Height, Color.Blue); //can you change these parameters to be the ones in sprite 
             }
 
             Raylib.EndDrawing();
