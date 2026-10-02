@@ -20,6 +20,8 @@ namespace Snake
             numHorLines = game.WindowHeight / squareSize;
             numVertLines = game.WindowWidth / squareSize;
         }
+
+       
         public void DrawGrid()
         {
             // Draw Vertical Lines

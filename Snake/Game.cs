@@ -13,10 +13,14 @@ namespace Snake
         public int WindowWidth = 800;
         public int WindowHeight = 800;
         // The number of lines in the grid
-
         public World World;
         public Snake Snake;
         public Food Food;
+
+     
+
+      
+
 
         public Game()
         {
@@ -24,16 +28,21 @@ namespace Snake
             World = new World(this);
             Snake = new Snake(this);
             Food = new Food(this);
+
+            Food.RandomSpawn(this);//moved here so it would go still need a new section that only updates on certain conditions 
+
         }
 
         public void Update()
         {
+
+
             //check sprite spawn
-            Food.Spawn(100, 100);
             Snake.Spawn(500, 500);
             Food.getEaten();
         }
 
+        
         public void Draw()
         {
 

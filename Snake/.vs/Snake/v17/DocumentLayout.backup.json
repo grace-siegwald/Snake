@@ -11,20 +11,24 @@
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
       "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:classdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|c:\\users\\unaor\\onedrive - columbia college chicago\\programming 3\\snake-myfiles\\snake\\snake\\snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC11535D-2168-43E9-9BB0-BF851B290EA2}|Snake.csproj|solutionrelative:snake.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +54,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAqwDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T20:37:58.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ClassDiagram.cd",
               "DocumentMoniker": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\ClassDiagram.cd",
@@ -57,19 +74,21 @@
               "ToolTip": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\ClassDiagram.cd",
               "RelativeToolTip": "ClassDiagram.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2026-09-29T03:51:23.198Z"
+              "WhenOpened": "2026-09-29T03:51:23.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "World.cs",
               "DocumentMoniker": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\World.cs",
               "RelativeDocumentMoniker": "World.cs",
               "ToolTip": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\World.cs",
               "RelativeToolTip": "World.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T04:12:09.444Z"
+              "WhenOpened": "2026-10-02T20:47:14.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -79,7 +98,7 @@
               "RelativeDocumentMoniker": "Game.cs",
               "ToolTip": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Game.cs",
               "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwB8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-26T20:22:22.112Z",
               "EditorCaption": ""
@@ -92,13 +111,14 @@
               "RelativeDocumentMoniker": "Sprite.cs",
               "ToolTip": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Sprite.cs",
               "RelativeToolTip": "Sprite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:17:03.606Z"
+              "WhenOpened": "2026-09-26T20:17:03.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Food.cs",
               "DocumentMoniker": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Food.cs",
               "RelativeDocumentMoniker": "Food.cs",
@@ -106,11 +126,12 @@
               "RelativeToolTip": "Food.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-26T20:16:19.096Z"
+              "WhenOpened": "2026-09-26T20:16:19.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Snake.cs",
               "DocumentMoniker": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Snake.cs",
               "RelativeDocumentMoniker": "Snake.cs",
@@ -118,7 +139,8 @@
               "RelativeToolTip": "Snake.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-29T03:52:21.104Z"
+              "WhenOpened": "2026-09-29T03:52:21.104Z",
+              "EditorCaption": ""
             }
           ]
         },
