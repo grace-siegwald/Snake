@@ -22,10 +22,6 @@ namespace Snake
         public int Length; //this will change sometimes
 
 
-        //using to randomize spawn location
-        public List<int> GameBoardCoordinatesList = new List<int>() {50, 100, 150, 200, 250};
-        Random rnd1 = new Random();
-
         public Sprite(Game game) // pass in an instance of the Game
         {
             Width = game.World.squareSize;
@@ -33,7 +29,7 @@ namespace Snake
         }
         public virtual void RandomSpawn(Game game)
         {
-            int RandomCoordinateX = new Random().Next(0, game.World.numVertLines) * game.World.squareSize;  //randomly geenrates a coordinate based on the already established grid syste
+            int RandomCoordinateX = new Random().Next(0, game.World.numVertLines) * game.World.squareSize;  //randomly generates a coordinate based on the already established grid syste
             int RandomCoordinateY = new Random().Next(0, game.World.numHorLines) * game.World.squareSize;
             SpawnLocationX = RandomCoordinateX;
             SpawnLocationY = RandomCoordinateY;
@@ -47,27 +43,6 @@ namespace Snake
 
             //spawn just means draw on the screen at x location
         }
-
-        public virtual void Random()
-        {//https://www.tutorialsteacher.com/articles/generate-random-numbers-in-csharp
-
-
-            Random rnd = new Random();
-            int num = rnd.Next();
-        }
-
-        //int r = rnd.Next(list.Count);
-
-        //public virtual void RandomSpawn()
-        //{
-        //    int num1 = GameBoardCoordinatesList[rnd1.Next(GameBoardCoordinatesList.Count)];
-        //    int num2 = GameBoardCoordinatesList[rnd1.Next(GameBoardCoordinatesList.Count)];
-
-        //    Spawn(num1, num2);
-        //    //SpawnLocationX = SpawnX;
-        //    //SpawnLocationY = SpawnY;
-
-        //}
 
 
 

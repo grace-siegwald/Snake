@@ -15,25 +15,23 @@ namespace Snake
         { 
         
         }
-        public override void Draw()
+        public override void Draw() //changed draw to only draw what the logic has determined 
         {
-            if (!Eaten) 
-            {
+            
                 Raylib.DrawRectangle(SpawnLocationX, SpawnLocationY, Width, Height, Color.LightGray);  
-            }
-            else
-            {
-                // TODO: draw in a new randomized location?
-            }
+          
         }
-        public void getEaten() //this is temp and should be in snake 
+
+       
+        public void getEaten() //this is temp and should be in snake - this now handles the logi of if the food has been eaten or not 
         {
 
             if (Raylib.IsKeyPressed(KeyboardKey.Enter)) //replace the condition with the collision between snake and food 
             {
                 Eaten = true;
                 //TODO: add a point to the score - add score in drawing logic 
-
+                RandomSpawn(new Game());
+                Eaten = false; //reset the eaten state for the next food spawn
             }
         }
     }

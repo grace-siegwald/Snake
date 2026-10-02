@@ -54,6 +54,7 @@ right now if you press enter the square disappears and the eaten bool is true
 
 /*
  Sources:
-
+https://www.tutorialsteacher.com/articles/generate-random-numbers-in-csharp used for randoms 
+https://stackoverflow.com/questions/2019417/how-to-access-random-item-in-list used for acessing randoms from a list 
  
  */
