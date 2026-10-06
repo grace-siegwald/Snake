@@ -31,6 +31,20 @@ namespace Snake
         public void getEaten(Game game) //this is temp and should be in snake - this now handles the logi of if the food has been eaten or not 
         {
 
+            if (game.Snakes[0].Location == game.Food.Location) //replace the condition with the collision between snake and food 
+            {
+                Eaten = true;
+                //TODO: add a point to the score - add score in drawing logic 
+                RandomSpawn(game.World);
+                Eaten = false; //reset the eaten state for the next food spawn
+            }
+        }
+
+
+        /*
+         public void getEaten(Game game) //this is temp and should be in snake - this now handles the logi of if the food has been eaten or not 
+        {
+
             if (Raylib.IsKeyPressed(KeyboardKey.Enter)) //replace the condition with the collision between snake and food 
             {
                 Eaten = true;
@@ -39,5 +53,11 @@ namespace Snake
                 Eaten = false; //reset the eaten state for the next food spawn
             }
         }
+         
+         
+         
+         
+         
+         */
     }
 }

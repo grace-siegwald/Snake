@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Numerics;
 using Raylib_cs;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Xml.Linq;
 
 namespace Snake
 {
@@ -13,7 +15,7 @@ namespace Snake
     {
         // The size of the game window
         public int WindowWidth = 800;
-        public int WindowHeight = 800;
+        public int WindowHeight = 600;
         // The number of lines in the grid
         public World World;
         public List<Snake> Snakes = new List<Snake>();
@@ -27,6 +29,8 @@ namespace Snake
             Snakes.Add(new Snake(this));
             Food = new Food(this);
         }
+
+      
 
         public void LoadContent()
         {
