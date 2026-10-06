@@ -31,16 +31,14 @@ namespace Snake
        
         public virtual void LoadContent(Game game)
         {
-            Spawn(1, 1, game);
+            RandomSpawn(game.World);
         }
 
-        public virtual void Spawn(int SpawnX, int SpawnY, Game game)
+        public void RandomSpawn(World world)
         {
-            // TODO: Normalize the spawn locations so it's just the "grid" coordinate of the world (ie 1,1 is top left square)
-            SpawnLocationX = SpawnX * game.World.squareSize;
-            SpawnLocationY = SpawnY * game.World.squareSize;
-
-            //spawn just means draw on the screen at x location
+            int RandomCoordinateX = new Random().Next(0, world.numVertLines) * world.squareSize;  //randomly generates a coordinate based on the already established grid system
+            int RandomCoordinateY = new Random().Next(0, world.numHorLines) * world.squareSize;
+            Location = new Vector2(RandomCoordinateX, RandomCoordinateY);
         }
 
         public virtual void Draw()

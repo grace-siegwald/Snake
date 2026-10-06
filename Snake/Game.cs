@@ -16,7 +16,7 @@ namespace Snake
         public int WindowHeight = 800;
         // The number of lines in the grid
         public World World;
-        public Snake Snake;
+        public List<Snake> Snakes = new List<Snake>();
         public Food Food;
 
 
@@ -24,24 +24,29 @@ namespace Snake
         {
             // Instances of all the game's objects, passing in instance of this game so they can access the game's fields
             World = new World(this);
-            Snake = new Snake(this);
+            Snakes.Add(new Snake(this));
             Food = new Food(this);
         }
 
         public void LoadContent()
         {
             Food.LoadContent(this);
-            Snake.LoadContent(this);
+            foreach (Snake snake in Snakes)
+            {
+                snake.LoadContent(this);
+            }
         }
 
         public void Update()
         {
             //check sprite spawn
-            Snake.Update(this);
+            foreach (Snake snake in Snakes)
+            {
+                snake.Update();
+            }
             Food.Update(this);
         }
 
-        
         public void Draw()
         {
 
@@ -49,7 +54,10 @@ namespace Snake
             Raylib.ClearBackground(Color.RayWhite);
 
             World.DrawGrid();
-            Snake.Draw();
+            foreach (Snake snake in Snakes)
+            {
+                snake.Draw();
+            }
             Food.Draw();
             DebugDraw();
 

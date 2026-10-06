@@ -18,24 +18,14 @@ namespace Snake
         { 
         
         }
-        public override void LoadContent(Game game)
-        {
-            RandomSpawn(game.World);
-        }
         public void Update(Game game)
         {
             getEaten(game);
         }
+        
         public override void Draw() //changed draw to only draw what the logic has determined 
         {
             Raylib.DrawRectangle((int)Location.X, (int)Location.Y, Width, Height, Color.LightGray);  
-        }
-
-        public void RandomSpawn(World world)
-        {
-            int RandomCoordinateX = new Random().Next(0, world.numVertLines) * world.squareSize;  //randomly generates a coordinate based on the already established grid system
-            int RandomCoordinateY = new Random().Next(0, world.numHorLines) * world.squareSize;
-            Location = new Vector2(RandomCoordinateX, RandomCoordinateY);
         }
 
         public void getEaten(Game game) //this is temp and should be in snake - this now handles the logi of if the food has been eaten or not 

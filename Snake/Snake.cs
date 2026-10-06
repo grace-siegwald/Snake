@@ -11,6 +11,8 @@ namespace Snake
 {
     public class Snake : Sprite
     {
+        private int snakeLengh;
+
         public Snake(Game game) : base(game)
         {
             this.Speed = 1;
@@ -21,7 +23,10 @@ namespace Snake
             Move();
             PlayerInput();
         }
-        
+        public override void Draw() //changed draw to only draw what the logic has determined 
+        {
+            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, Width, Height, Color.SkyBlue);
+        }
         public void Eat()
         {
             // TODO: add eating logic here
@@ -30,17 +35,11 @@ namespace Snake
         {
             // Movement should basically be Location = Location + Direction * Speed (I THINK!)
             Location += Direction * Speed;
-             
         }
         public void Grow()
         {
             // TODO: add growing logic here
             // If this snake has just ate food, grow by one square size 
-        }
-        public override void Draw()
-        {
-            // TODO: figure out if draw logic for snake needs its own special functionality, implement it here
-            base.Draw();
         }
         public void PlayerInput()
         {

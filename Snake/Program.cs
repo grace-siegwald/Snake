@@ -16,8 +16,6 @@ namespace Snake
             // Main game loop
             while (!Raylib.WindowShouldClose())
             {
-                
-                
                 // 1. Update logic
                 game.Update();
 
