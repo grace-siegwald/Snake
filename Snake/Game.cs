@@ -20,6 +20,7 @@ namespace Snake
         public World World;
         public List<Snake> Snakes = new List<Snake>();
         public Food Food;
+        public Score Score;
 
 
         public Game()
@@ -28,9 +29,8 @@ namespace Snake
             World = new World(this);
             Snakes.Add(new Snake(this));
             Food = new Food(this);
-        }
 
-      
+        }
 
         public void LoadContent()
         {
