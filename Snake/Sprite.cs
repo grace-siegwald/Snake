@@ -28,12 +28,17 @@ namespace Snake
             Width = game.World.squareSize;
             Height = game.World.squareSize;
         }
-        
-        public virtual void Spawn(int SpawnX, int SpawnY)
+       
+        public virtual void LoadContent(Game game)
+        {
+            Spawn(1, 1, game);
+        }
+
+        public virtual void Spawn(int SpawnX, int SpawnY, Game game)
         {
             // TODO: Normalize the spawn locations so it's just the "grid" coordinate of the world (ie 1,1 is top left square)
-            SpawnLocationX = SpawnX;
-            SpawnLocationY = SpawnY;
+            SpawnLocationX = SpawnX * game.World.squareSize;
+            SpawnLocationY = SpawnY * game.World.squareSize;
 
             //spawn just means draw on the screen at x location
         }

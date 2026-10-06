@@ -28,11 +28,16 @@ namespace Snake
             Food = new Food(this);
         }
 
+        public void LoadContent()
+        {
+            Food.LoadContent(this);
+            Snake.LoadContent(this);
+        }
+
         public void Update()
         {
             //check sprite spawn
-            Snake.Spawn(500, 500);
-            Snake.Update();
+            Snake.Update(this);
             Food.Update(this);
         }
 

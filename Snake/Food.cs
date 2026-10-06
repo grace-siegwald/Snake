@@ -18,6 +18,10 @@ namespace Snake
         { 
         
         }
+        public override void LoadContent(Game game)
+        {
+            RandomSpawn(game.World);
+        }
         public void Update(Game game)
         {
             getEaten(game);
@@ -27,7 +31,7 @@ namespace Snake
             Raylib.DrawRectangle((int)Location.X, (int)Location.Y, Width, Height, Color.LightGray);  
         }
 
-        public virtual void RandomSpawn(World world)
+        public void RandomSpawn(World world)
         {
             int RandomCoordinateX = new Random().Next(0, world.numVertLines) * world.squareSize;  //randomly generates a coordinate based on the already established grid system
             int RandomCoordinateY = new Random().Next(0, world.numHorLines) * world.squareSize;
