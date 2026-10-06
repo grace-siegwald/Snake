@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nFxwoPD7o3Q=",
+  "dgSpecHash": "C1vku/F5TVxPWN1TA0OSE+oSEAOqb1aMSB0lq0HsL5epR6bsLwMyp2GUg7rGRjaePu+ROGjkf/vzzpbIBG34pQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\unaor\\OneDrive - Columbia College Chicago\\Programming 3\\Snake-MyFiles\\Snake\\Snake\\Snake.csproj",
+  "projectFilePath": "C:\\Users\\Siegwald\\Documents\\GitHub\\Snake\\Snake\\Snake.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\unaor\\.nuget\\packages\\raylib-cs\\8.1.0\\raylib-cs.8.1.0.nupkg.sha512"
+    "C:\\Users\\Siegwald\\.nuget\\packages\\raylib-cs\\8.1.0\\raylib-cs.8.1.0.nupkg.sha512"
   ],
   "logs": []
 }

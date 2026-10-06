@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 using Raylib_cs;
 
 namespace Snake
@@ -11,15 +13,24 @@ namespace Snake
     {
         public Snake(Game game) : base(game)
         {
+            this.Speed = 1;
+            this.Direction = new Vector2(-game.World.squareSize, 0);
         } 
-
+        public void Update()
+        {
+            Move();
+            PlayerInput();
+        }
+        
         public void Eat()
         {
             // TODO: add eating logic here
         }
         public void Move()
         {
-            // TODO: add movement logic here
+            // Movement should basically be Location = Location + Direction * Speed (I THINK!)
+            Location += Direction * Speed;
+             
         }
         public void Grow()
         {
@@ -30,6 +41,25 @@ namespace Snake
         {
             // TODO: figure out if draw logic for snake needs its own special functionality, implement it here
             base.Draw();
+        }
+        public void PlayerInput()
+        {
+            if (Raylib.IsKeyPressed(KeyboardKey.Left))
+            {
+                // Change snake direction to Left (-world.squareSize, 0)
+            }
+            if (Raylib.IsKeyPressed(KeyboardKey.Right))
+            {
+                // Change snake direction to Right (world.squareSize, 0)
+            }
+            if (Raylib.IsKeyPressed(KeyboardKey.Up))
+            {
+                // Change snake direction to Up (0, -world.squareSize)
+            }
+            if (Raylib.IsKeyPressed(KeyboardKey.Down))
+            {
+                // Change snake direction to Down (0, world.squareSize)
+            }
         }
     }
 }

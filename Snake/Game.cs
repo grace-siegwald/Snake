@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Numerics;
 using Raylib_cs;
 
 namespace Snake
@@ -24,16 +26,14 @@ namespace Snake
             World = new World(this);
             Snake = new Snake(this);
             Food = new Food(this);
-
-            Food.RandomSpawn(this);//moved here so it would go still need a new section that only updates on certain conditions - it ight need to move, but if it goes in update it oves evry second
-
         }
 
         public void Update()
         {
             //check sprite spawn
             Snake.Spawn(500, 500);
-            Food.getEaten();
+            Snake.Update();
+            Food.Update(this);
         }
 
         
