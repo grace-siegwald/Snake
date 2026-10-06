@@ -25,7 +25,7 @@ namespace Snake
         
         public override void Draw() //changed draw to only draw what the logic has determined 
         {
-            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, Width, Height, Color.LightGray);  
+            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.LightGray);  
         }
 
         public void getEaten(Game game) //this is temp and should be in snake - this now handles the logi of if the food has been eaten or not 

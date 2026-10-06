@@ -11,13 +11,8 @@ namespace Snake
 {
     public class Sprite 
     {
-        public int Width;
-        public int Height;
-        public int SpawnLocationX;
-        public int SpawnLocationY; //sprite position is being controlled here
-        public int SpawnLocationY1; //this only occurs once at the start of the game
+        public Vector2 Size;
         public Vector2 Direction;
-        public int Speed;
         // These two fields change during gameplay:
         public Vector2 Location; //this will change consistently
         public int Length; //this will change sometimes
@@ -25,8 +20,9 @@ namespace Snake
 
         public Sprite(Game game) // pass in an instance of the Game
         {
-            Width = game.World.squareSize;
-            Height = game.World.squareSize;
+            int width = game.World.squareSize;
+            int height = game.World.squareSize;
+            Size = new Vector2 (width, height);
         }
        
         public virtual void LoadContent(Game game)
@@ -43,7 +39,7 @@ namespace Snake
 
         public virtual void Draw()
         {
-            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, Width, Height, Color.SkyBlue);
+            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.SkyBlue);
         }
     }
 }

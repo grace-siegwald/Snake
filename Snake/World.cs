@@ -23,7 +23,6 @@ namespace Snake
             numVertLines = game.WindowWidth / squareSize;
         }
 
-       
         public void DrawGrid()
         {
             // Draw Vertical Lines

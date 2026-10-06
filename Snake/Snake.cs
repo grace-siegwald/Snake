@@ -15,26 +15,26 @@ namespace Snake
 
         public Snake(Game game) : base(game)
         {
-            this.Speed = 1;
-            this.Direction = new Vector2(-game.World.squareSize, 0);
+            Direction = new Vector2(game.World.squareSize, 0);
         } 
-        public void Update()
+        public void Update(Game game)
         {
-            Move();
+            Move(game);
             PlayerInput();
         }
         public override void Draw() //changed draw to only draw what the logic has determined 
         {
-            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, Width, Height, Color.SkyBlue);
+            Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.SkyBlue);
         }
         public void Eat()
         {
             // TODO: add eating logic here
         }
-        public void Move()
+        public void Move(Game game)
         {
             // Movement should basically be Location = Location + Direction * Speed (I THINK!)
-            Location += Direction * Speed;
+            Location.X += Direction.X;
+            Location.Y += Direction.Y;
         }
         public void Grow()
         {

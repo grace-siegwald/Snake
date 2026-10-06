@@ -42,7 +42,7 @@ namespace Snake
             //check sprite spawn
             foreach (Snake snake in Snakes)
             {
-                snake.Update();
+                snake.Update(this);
             }
             Food.Update(this);
         }
