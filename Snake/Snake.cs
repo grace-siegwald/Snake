@@ -11,16 +11,16 @@ namespace Snake
 {
     public class Snake : Sprite
     {
-        private int snakeLengh;
-
+        private float moveTimer = 0f; // number of seconds since the last steps
+        private float moveInterval = .1f; // number of seconds between steps
         public Snake(Game game) : base(game)
         {
             Direction = new Vector2(game.World.squareSize, 0);
         } 
         public void Update(Game game)
         {
+            PlayerInput(game);
             Move(game);
-            PlayerInput();
         }
         public override void Draw() //changed draw to only draw what the logic has determined 
         {
@@ -33,31 +33,41 @@ namespace Snake
         public void Move(Game game)
         {
             // Movement should basically be Location = Location + Direction * Speed (I THINK!)
-            Location.X += Direction.X;
-            Location.Y += Direction.Y;
+            moveTimer += Raylib.GetFrameTime();
+            
+            if (moveTimer >= moveInterval)
+            {
+                Location.X += Direction.X;
+                Location.Y += Direction.Y;
+                moveTimer -= moveInterval; //resets the move timer
+            }
         }
         public void Grow()
         {
             // TODO: add growing logic here
             // If this snake has just ate food, grow by one square size 
         }
-        public void PlayerInput()
+        public void PlayerInput(Game game)
         {
             if (Raylib.IsKeyPressed(KeyboardKey.Left))
             {
-                // Change snake direction to Left (-world.squareSize, 0)
+                // Left
+                Direction = new Vector2(-game.World.squareSize, 0);
             }
             if (Raylib.IsKeyPressed(KeyboardKey.Right))
             {
-                // Change snake direction to Right (world.squareSize, 0)
+                // Right
+                Direction = new Vector2(game.World.squareSize, 0);
             }
             if (Raylib.IsKeyPressed(KeyboardKey.Up))
             {
-                // Change snake direction to Up (0, -world.squareSize)
+                // Up
+                Direction = new Vector2(0, -game.World.squareSize);
             }
             if (Raylib.IsKeyPressed(KeyboardKey.Down))
             {
-                // Change snake direction to Down (0, world.squareSize)
+                // Down
+                Direction = new Vector2(0, game.World.squareSize);
             }
         }
     }
