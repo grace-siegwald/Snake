@@ -1,26 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using System.Numerics;
 using Raylib_cs;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Snake
 {
     public class Snake : Sprite
-    {
+    {   public bool dead = false;
         private float moveTimer = 0f; // number of seconds since the last steps
         private float moveInterval = .1f; // number of seconds between steps
         public Snake(Game game) : base(game)
         {
             Direction = new Vector2(game.World.squareSize, 0);
-        } 
+        }
         public void Update(Game game)
         {
             PlayerInput(game);
             Move(game);
+            if (dead == true)
+            {
+                Raylib.DrawText($"YOU DIED", game.WindowWidth/3, game.WindowHeight/3, 40, Raylib_cs.Color.Red); //make new sreen
+
+            }
+            CheckWallCollision(game);
         }
         public override void Draw() //changed draw to only draw what the logic has determined 
         {
@@ -34,7 +41,7 @@ namespace Snake
         {
             // Movement should basically be Location = Location + Direction * Speed (I THINK!)
             moveTimer += Raylib.GetFrameTime();
-            
+
             if (moveTimer >= moveInterval)
             {
                 Location.X += Direction.X;
@@ -70,5 +77,15 @@ namespace Snake
                 Direction = new Vector2(0, game.World.squareSize);
             }
         }
+
+        public void CheckWallCollision(Game game)
+        {
+            if (Location.X < 0 || Location.X >= game.WindowWidth || Location.Y < 0 || Location.Y >= game.WindowHeight)
+            {
+                dead = true;
+            }
+        }
+
+
     }
 }
