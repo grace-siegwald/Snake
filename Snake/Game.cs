@@ -29,7 +29,7 @@ namespace Snake
             World = new World(this);
             Snakes.Add(new Snake(this));
             Food = new Food(this);
-
+            Score = new Score(this);
         }
 
         public void LoadContent()
@@ -49,6 +49,7 @@ namespace Snake
                 snake.Update(this);
             }
             Food.Update(this);
+            Score.Update(this);
         }
 
         public void Draw()
@@ -63,7 +64,8 @@ namespace Snake
                 snake.Draw();
             }
             Food.Draw();
-            DebugDraw();
+            Score.Draw(this);
+          //  DebugDraw();
 
             Raylib.EndDrawing();
         }

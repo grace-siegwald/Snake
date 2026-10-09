@@ -37,6 +37,7 @@ namespace Snake
                 //TODO: add a point to the score - add score in drawing logic 
                 RandomSpawn(game.World);
                 Eaten = false; //reset the eaten state for the next food spawn
+                game.Score.AddPoint(); // Add a point to the score when food is eaten
             }
         }
 
