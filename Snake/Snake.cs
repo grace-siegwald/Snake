@@ -27,7 +27,6 @@ namespace Snake
         {
             PlayerInput(game);
             Move(game);
-            UpdateLength(game);
             CheckWallCollision(game);
         }
         public override void Draw(Game game) //changed draw to only draw what the logic has determined 
@@ -39,12 +38,9 @@ namespace Snake
 
             }
         }
-        public void UpdateLength(Game game)
+        public void Grow(Game game)
         {
-            if (game.Food.Eaten)
-            {
-                Length++;
-            }
+            Length++;
         }
         public void Eat()
         {

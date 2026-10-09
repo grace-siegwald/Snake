@@ -12,8 +12,6 @@ namespace Snake
     public class Food : Sprite
     {
         public int Value; //this is the players points
-
-        public bool Eaten = false;
         public Food(Game game) : base(game) // Pass the required Game instance to the base Sprite constructor
         { 
         
@@ -33,10 +31,9 @@ namespace Snake
 
             if (game.Snakes[0].Location == game.Food.Location) //replace the condition with the collision between snake and food 
             {
-                Eaten = true;
                 RandomSpawn(game.World);
-                Eaten = false; //reset the eaten state for the next food spawn
                 game.Score.AddPoint(); // Add a point to the score when food is eaten
+                game.Snakes[0].Grow(game);   // tell the snake it ate
             }
         }
 
