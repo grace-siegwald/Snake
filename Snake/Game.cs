@@ -25,7 +25,7 @@ namespace Snake
         public int WindowHeight = 600;
         // The number of lines in the grid
         public World World;
-        public List<Snake> Snakes = new List<Snake>();
+        public List<Snake> Snakes = new List<Snake>(); // Settup for multiplayer perhaps? for now, only one snake in the list lol
         public Food Food;
         public Score Score;
         public float moveTimer = 0f; // number of seconds since the last steps
@@ -51,8 +51,7 @@ namespace Snake
         }
 
         public void Update()
-        {
-            //check sprite spawn
+        {   
             foreach (Snake snake in Snakes)
             {
                 snake.Update(this);
@@ -85,6 +84,7 @@ namespace Snake
             Raylib.DrawText($"Num Vertical Lines: {World.numVertLines}", 55, 50, 20, Color.Red);
             Raylib.DrawText($"Num Horizontal Lines: {World.numHorLines}", 55, 75, 20, Color.Red);
             Raylib.DrawText($"Snake Length: {Snakes[0].Length}", 55, 100, 20, Color.Red);
+            Raylib.DrawText($"Snake Body: {Snakes[0].Body.Count}", 55, 125, 20, Color.Red);
         }
     }
 }
