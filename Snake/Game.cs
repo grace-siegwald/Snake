@@ -72,9 +72,9 @@ namespace Snake
             {
                 snake.Draw(this);
             }
-            Food.Draw();
-            Score.Draw(this);
-          //  DebugDraw();
+            Food.Draw(this);
+            //Score.Draw(this);
+            DebugDraw();
 
             Raylib.EndDrawing();
         }
@@ -84,6 +84,7 @@ namespace Snake
         {
             Raylib.DrawText($"Num Vertical Lines: {World.numVertLines}", 55, 50, 20, Color.Red);
             Raylib.DrawText($"Num Horizontal Lines: {World.numHorLines}", 55, 75, 20, Color.Red);
+            Raylib.DrawText($"Snake Length: {Snakes[0].Length}", 55, 100, 20, Color.Red);
         }
     }
 }

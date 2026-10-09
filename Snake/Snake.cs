@@ -11,7 +11,9 @@ using static System.Formats.Asn1.AsnWriter;
 namespace Snake
 {
     public class Snake : Sprite
-    {   public bool dead = false;
+    {
+        public bool isDead;
+        public int Length; //this will change sometimes
 
         public Snake(Game game) : base(game)
         {
@@ -25,15 +27,23 @@ namespace Snake
         {
             PlayerInput(game);
             Move(game);
+            UpdateLength(game);
             CheckWallCollision(game);
         }
         public override void Draw(Game game) //changed draw to only draw what the logic has determined 
         {
             Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.SkyBlue);
-            if (dead == true)
+            if (isDead)
             {
                 Raylib.DrawText($"YOU DIED", game.WindowWidth / 3, game.WindowHeight / 3, 40, Raylib_cs.Color.Red); //make new sreen
 
+            }
+        }
+        public void UpdateLength(Game game)
+        {
+            if (game.Food.Eaten)
+            {
+                Length++;
             }
         }
         public void Eat()
@@ -51,11 +61,6 @@ namespace Snake
                 Location.Y += Direction.Y;
                 game.moveTimer -= game.moveInterval; //resets the move timer
             }
-        }
-        public void Grow()
-        {
-            // TODO: add growing logic here
-            // If this snake has just ate food, grow by one square size 
         }
         public void PlayerInput(Game game)
         {
@@ -85,13 +90,8 @@ namespace Snake
         {
             if (Location.X < 0 || Location.X >= game.WindowWidth || Location.Y < 0 || Location.Y >= game.WindowHeight)
             {
-                dead = true;
+                isDead = true;
             }
-        }
-
-        public void AddLength()
-        {
-            Length += 1;
         }
     }
 }

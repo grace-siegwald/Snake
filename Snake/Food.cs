@@ -23,7 +23,7 @@ namespace Snake
             getEaten(game);
         }
         
-        public override void Draw() //changed draw to only draw what the logic has determined 
+        public override void Draw(Game game) //changed draw to only draw what the logic has determined 
         {
             Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.LightGray);  
         }
@@ -34,7 +34,6 @@ namespace Snake
             if (game.Snakes[0].Location == game.Food.Location) //replace the condition with the collision between snake and food 
             {
                 Eaten = true;
-                //TODO: add a point to the score - add score in drawing logic 
                 RandomSpawn(game.World);
                 Eaten = false; //reset the eaten state for the next food spawn
                 game.Score.AddPoint(); // Add a point to the score when food is eaten

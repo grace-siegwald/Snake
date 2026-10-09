@@ -15,7 +15,6 @@ namespace Snake
         public Vector2 Direction;
         // These two fields change during gameplay:
         public Vector2 Location; //this will change constantly
-        public int Length; //this will change sometimes
 
 
         public Sprite(Game game) // pass in an instance of the Game
