@@ -12,26 +12,29 @@ namespace Snake
 {
     public class Snake : Sprite
     {   public bool dead = false;
-        private float moveTimer = 0f; // number of seconds since the last steps
-        private float moveInterval = .1f; // number of seconds between steps
+
         public Snake(Game game) : base(game)
         {
             Direction = new Vector2(game.World.squareSize, 0);
+        }
+        public override void LoadContent(Game game)
+        {
+            base.Spawn(game.World, game.World.snakeStartCordinate);
         }
         public void Update(Game game)
         {
             PlayerInput(game);
             Move(game);
-            if (dead == true)
-            {
-                Raylib.DrawText($"YOU DIED", game.WindowWidth/3, game.WindowHeight/3, 40, Raylib_cs.Color.Red); //make new sreen
-
-            }
             CheckWallCollision(game);
         }
-        public override void Draw() //changed draw to only draw what the logic has determined 
+        public override void Draw(Game game) //changed draw to only draw what the logic has determined 
         {
             Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.SkyBlue);
+            if (dead == true)
+            {
+                Raylib.DrawText($"YOU DIED", game.WindowWidth / 3, game.WindowHeight / 3, 40, Raylib_cs.Color.Red); //make new sreen
+
+            }
         }
         public void Eat()
         {
@@ -40,13 +43,13 @@ namespace Snake
         public void Move(Game game)
         {
             // Movement should basically be Location = Location + Direction * Speed (I THINK!)
-            moveTimer += Raylib.GetFrameTime();
+            game.moveTimer += Raylib.GetFrameTime();
 
-            if (moveTimer >= moveInterval)
+            if (game.moveTimer >= game. moveInterval)
             {
                 Location.X += Direction.X;
                 Location.Y += Direction.Y;
-                moveTimer -= moveInterval; //resets the move timer
+                game.moveTimer -= game.moveInterval; //resets the move timer
             }
         }
         public void Grow()
@@ -56,22 +59,22 @@ namespace Snake
         }
         public void PlayerInput(Game game)
         {
-            if (Raylib.IsKeyPressed(KeyboardKey.Left))
+            if (Raylib.IsKeyPressed(KeyboardKey.Left) && !(Direction.X > 0))
             {
                 // Left
                 Direction = new Vector2(-game.World.squareSize, 0);
             }
-            if (Raylib.IsKeyPressed(KeyboardKey.Right))
+            if (Raylib.IsKeyPressed(KeyboardKey.Right) && !(Direction.X < 0))
             {
                 // Right
                 Direction = new Vector2(game.World.squareSize, 0);
             }
-            if (Raylib.IsKeyPressed(KeyboardKey.Up))
+            if (Raylib.IsKeyPressed(KeyboardKey.Up) && !(Direction.Y > 0))
             {
                 // Up
                 Direction = new Vector2(0, -game.World.squareSize);
             }
-            if (Raylib.IsKeyPressed(KeyboardKey.Down))
+            if (Raylib.IsKeyPressed(KeyboardKey.Down) && !(Direction.Y < 0))
             {
                 // Down
                 Direction = new Vector2(0, game.World.squareSize);
@@ -86,6 +89,9 @@ namespace Snake
             }
         }
 
-
+        public void AddLength()
+        {
+            Length += 1;
+        }
     }
 }

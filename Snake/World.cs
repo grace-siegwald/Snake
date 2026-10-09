@@ -15,12 +15,14 @@ namespace Snake
         public int numHorLines; 
         public int numVertLines;
         public int squareSize = 40;
+        public Vector2 snakeStartCordinate;
         public World(Game game)
         {
             WindowHeight = game.WindowHeight;
             WindowWidth = game.WindowWidth;
             numHorLines = game.WindowHeight / squareSize;
             numVertLines = game.WindowWidth / squareSize;
+            snakeStartCordinate = new Vector2((numVertLines / 2) * squareSize - (3 * squareSize), (numHorLines / 2) * squareSize);
         }
 
         public void DrawGrid()

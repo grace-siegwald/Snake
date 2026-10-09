@@ -11,6 +11,13 @@ using System.Xml.Linq;
 
 namespace Snake
 {
+    enum gameState
+    {
+        MainMenu,
+        Playing,
+        GameOver
+    }
+
     public class Game
     {
         // The size of the game window
@@ -21,6 +28,8 @@ namespace Snake
         public List<Snake> Snakes = new List<Snake>();
         public Food Food;
         public Score Score;
+        public float moveTimer = 0f; // number of seconds since the last steps
+        public float moveInterval = .1f; // number of seconds between steps
 
 
         public Game()
@@ -61,7 +70,7 @@ namespace Snake
             World.DrawGrid();
             foreach (Snake snake in Snakes)
             {
-                snake.Draw();
+                snake.Draw(this);
             }
             Food.Draw();
             Score.Draw(this);
