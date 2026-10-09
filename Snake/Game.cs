@@ -72,6 +72,13 @@ namespace Snake
                 snake.Draw(this);
             }
             Food.Draw(this);
+
+            // Draw the snake's death message if it is dead
+            if (Snakes[0].isDead)
+            {
+                Raylib.DrawText($"YOU DIED", WindowWidth / 3, WindowHeight / 3, 40, Raylib_cs.Color.Red); //make new screen
+            }
+            
             //Score.Draw(this);
             DebugDraw();
 

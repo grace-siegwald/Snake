@@ -28,19 +28,17 @@ namespace Snake
         {
             PlayerInput(game);
             Move(game);
-            CheckWallCollision(game);
+            CheckCollision(game);
         }
-        public override void Draw(Game game) //changed draw to only draw what the logic has determined 
+        public override void Draw(Game game) 
         {
+            // Draw the snake's head
             Raylib.DrawRectangle((int)Location.X, (int)Location.Y, (int)Size.X, (int)Size.Y, Color.SkyBlue);
+            
+            // Draw the snake's body
             foreach (Vector2 segment in Body)
             {
-                Raylib.DrawRectangle((int)segment.X, (int)segment.Y, (int)Size.X, (int)Size.Y, Color.Blue);
-            }
-            if (isDead)
-            {
-                Raylib.DrawText($"YOU DIED", game.WindowWidth / 3, game.WindowHeight / 3, 40, Raylib_cs.Color.Red); //make new sreen
-
+                Raylib.DrawRectangle((int)segment.X, (int)segment.Y, (int)Size.X, (int)Size.Y, Color.Blue); // just drawing the body 
             }
         }
         public void Grow(Game game)
@@ -95,9 +93,16 @@ namespace Snake
             }
         }
 
-        public void CheckWallCollision(Game game)
+        public void CheckCollision(Game game)
         {
+            // Check if the snake has collided with the walls
             if (Location.X < 0 || Location.X >= game.WindowWidth || Location.Y < 0 || Location.Y >= game.WindowHeight)
+            {
+                isDead = true;
+            }
+
+            // Check if the snake has collided with itself: if the body list contains the current location of the snake head, then the snake has collided with itself and is dead
+            if (Body.Contains(Location))
             {
                 isDead = true;
             }
