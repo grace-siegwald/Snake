@@ -10,8 +10,6 @@ namespace Snake
             // Initialize a window with a width, height, and title
             Raylib.InitWindow(game.WindowWidth, game.WindowHeight, "Snake!");
             Raylib.SetTargetFPS(60);
-            // SHOULD BE the initial loading of the game, only runs once
-            game.LoadContent();
             
             // Main game loop
             while (!Raylib.WindowShouldClose())
