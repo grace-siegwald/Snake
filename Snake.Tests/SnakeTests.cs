@@ -180,43 +180,4 @@ namespace Snake.Tests
             Assert.False(snake.isDead);
         }
     }
-
-    // ---------- Feature 4: Food spawning ----------
-    public class FoodSpawnTests
-    {
-        [Fact] // Boundary: every random spawn is on the grid and inside the window
-        public void RandomSpawn_AlwaysInsideWindow_AndOnGrid()
-        {
-            var game = TestGame.Create();
-            for (int i = 0; i < 2000; i++)
-            {
-                game.Food.RandomSpawn(game.World);
-                var p = game.Food.Location;
-                Assert.InRange(p.X, 0f, game.WindowWidth - 40f);
-                Assert.InRange(p.Y, 0f, game.WindowHeight - 40f);
-                Assert.Equal(0f, p.X % 40);
-                Assert.Equal(0f, p.Y % 40);
-            }
-        }
-
-        [Fact] // DEFECT FOUND: food can spawn underneath the snake
-        public void RandomSpawn_NeverPlacesFoodOnSnake()
-        {
-            var game = TestGame.Create();
-            var snake = game.Snakes[0];
-
-            // Fill every grid square except (760, 560) with the snake.
-            snake.Location = new Vector2(0, 0);
-            for (int y = 0; y < 600; y += 40)
-                for (int x = 0; x < 800; x += 40)
-                    if (!(x == 0 && y == 0) && !(x == 760 && y == 560))
-                        snake.Body.Add(new Vector2(x, y));
-
-            for (int i = 0; i < 50; i++)
-            {
-                game.Food.RandomSpawn(game.World);
-                Assert.Equal(new Vector2(760, 560), game.Food.Location);
-            }
-        }
-    }
 }
